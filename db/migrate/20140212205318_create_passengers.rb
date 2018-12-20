@@ -3,5 +3,8 @@ class CreatePassengers < ActiveRecord::Migration
     create_table :passengers do |t|
       t.timestamps null: false
     end
+
+    add_column
+      t.string :name 
   end
 end
